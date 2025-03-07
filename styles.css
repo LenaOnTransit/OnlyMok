@@ -14,22 +14,67 @@ html, body {
     background-color: #0454d4;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.navbar img {
+    height: 50px; /* Adjust logo size */
 }
 
 ul {
     display: flex;
     flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 li {
-    display: flex;
-    flex-direction: row;
+    margin: 0;
 }
 
 a {
-    margin: 2em;
+    margin: 0.5em;
     background-color: #0162ff;
     color: white;
     border-radius: 5px;
-    padding: 1em;
+    padding: 0.7em;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    li {
+        width: 100%;
+        padding: 0.5em 0;
+    }
+
+    a {
+        display: block;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+h1, p {
+    text-align: center;
+    padding: 0 1em;
+}
+
+main {
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
 }
