@@ -10,18 +10,18 @@ html, body {
 .navbar {
     background-color: #0454d4;
     display: flex;
-    justify-content: space-between; /* Spread items */
+    justify-content: space-between;
     align-items: center;
     padding: 1em;
     width: 100%;
-    position: fixed; /* Stays at the top */
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* Ensures it's above other elements */
+    z-index: 1000;
 }
 
 .navbar img {
-    height: 40px; /* Adjust logo size */
+    height: 40px;
     margin-left: 1em;
 }
 
@@ -45,12 +45,10 @@ a {
     display: block;
 }
 
-/* Push content down so it's not hidden under navbar */
 main {
     padding-top: 80px;
 }
 
-/* Mobile-Friendly Adjustments */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -64,7 +62,7 @@ main {
     }
 
     a {
-        width: 100%; /* Make buttons full width on small screens */
+        width: 100%;
         text-align: center;
     }
 }
